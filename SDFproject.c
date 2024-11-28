@@ -367,14 +367,33 @@ void vehicleService(CustomerManager* manager, int customer_id) {
         totalCost -= discount;
     }
 
-    // Print bill
+    /*
+    NOW THE BILL IS GOING TO BE PRINTED
+    */
+    /* From here billing management starts
+        
+        STARTS 
+
+        */
+
+// Here, the layout of billing management is being printed.
+    
     printf("\n------------------------------------------------------------\n");
     printf("                    CAR WORKSHOP BILL\n");
+    
+    // these dashes are being used to make the layout
     printf("------------------------------------------------------------\n");
+    /* 
+        Here,
+           the services are going to be printed
+    */
     printf("Customer Name: %s\n", customer->name);
     printf("Vehicle Type: %s\n", vehicleType);
     printf("------------------------------------------------------------\n");
     printf("| %-30s | %-8s | %-12s |\n", "Service Name", "Cost ($)", "Time (hours)");
+    
+    // Here, this -30, -8, -12, are being used for the alignment
+    
     printf("------------------------------------------------------------\n");
 
     for (int i = 0; i < selectedServicesCount; i++) {
